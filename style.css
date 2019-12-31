@@ -28,7 +28,7 @@ h1, h2{
     width:100%;
     text-align:center;
     color:#000;
-    font-size:27px;
+    font-size:57px;
     letter-spacing:8px;
     text-transform:uppercase; 
 }
@@ -48,15 +48,13 @@ h1, h2{
 
     /* ????????? Add media query */  
  }
- @media only screen and (max-width: 600px) {
-    .page3 {
-        min-height:2700px;
-     }
-  }
+
  .page5 {
     background-image: url("img/takeoff.jpg");
-    min-height: 1000px;
+    min-height: 800px;
  }
+
+
 .page1, .page3, .page5{
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -92,6 +90,13 @@ h1, h2{
       background-color:black;
       color: white;
       opacity: 1;
+  }
+
+  .history, .intro > p {
+    font-family: Lato;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 1px;
   }
 
   /* Angle Start*/
@@ -175,16 +180,78 @@ h1, h2{
     
     .container > h2{
         color: white;
+        background: rgba(83, 82, 82, 0.8);
+        margin: 5% 25% ;
+        padding: 0.5% 0;
     }
    
     .galery{
         display: flex;
         position:absolute;
-        margin: 200px 50px;   
+        margin: 10px 50px 100px 50px;   
     }
 
   
 
     /* Gallery End*/
+
+       /* Fade-in Page Start */
+       .fadehead{
+         display: flex;
+         flex:1;
+         flex-wrap: wrap;
+         justify-content: center;
+       }
+
+       .fade{
+        position: relative;
+        top:150px;
+        width:250px;
+        text-align:center;
+        color: white;
+        font-size:18px; 
+        border: white 2px solid;
+        margin: 50px;
+        padding: 30px 50px;
+        background: rgba(83, 82, 82, 0.8);
+        opacity: 1;
+        font-family: Lato;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        }
+    
+        .fade:hover{
+          background-color: black;
+        }
+
+        .fadehead > h2{
+          position: relative;
+          text-align: center;
+          color: white;
+          top: 100px;
+          background:rgba(83, 82, 82, 0.8);
+          margin: 0 25% ;
+          padding: 0.5% 0;
+        }
+
+        @media only screen and (max-width: 600px) {
+          .page3 {
+              min-height:2500px;
+           }
+           .textBox{
+            font-size:27px;
+           }
+           .page5 {
+            min-height:2300px;
+         }
+         .history, .intro > p {
+          font-family: Lato;
+          font-size: 17px;
+          line-height: 20px;
+        }
+        }
+
+        
 
    
